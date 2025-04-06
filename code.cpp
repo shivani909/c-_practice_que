@@ -116,9 +116,48 @@ int main()
     //     {
     //         cout << j << " "; /* code */
     //     }
-    //     cout << endl; 
+    //     cout << endl;
     // }
 
-
     // PB8 (reverse tRiangle pattern 5)
+
+    // int n = 4;
+
+    // for (int i = 0; i < n; i++)
+    // {
+
+    //     for (int j = i + 1; j > 0; j--)
+    //     {
+    //         cout << j;
+    //     }
+    //     cout << endl;
+    // }
+
+    // PB9 (Inverted tRiangle pattern 6)
+
+    int n = 4;
+
+    int num = 1;
+    for (int i = 0; i <= n; i++)
+
+
+    {
+    
+    // cout << i << " ";
+    //     spaces
+        for (int j = 0; j < i; j++)
+        {
+            cout << j ;
+        }
+
+        // // nums
+
+        for (int j = 0; j < n - i; j++)
+        {
+
+            cout << (i + 1);
+        }
+
+        cout << endl;
+    }
 }
