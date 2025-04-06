@@ -135,29 +135,83 @@ int main()
 
     // PB9 (Inverted tRiangle pattern 6)
 
-    int n = 4;
+    // int n = 4;
 
-    int num = 1;
-    for (int i = 0; i <= n; i++)
+    // int num = 1;
+    // for (int i = 0; i <= n; i++)
 
+    // {
 
-    {
-    
-    // cout << i << " ";
-    //     spaces
-        for (int j = 0; j < i; j++)
-        {
-            cout << j ;
-        }
+    //     // cout << i << " ";
+    //     //     spaces
+    //     for (int j = 0; j < i; j++)
+    //     {
+    //         cout << j;
+    //     }
 
         // // nums
 
-        for (int j = 0; j < n - i; j++)
-        {
+    //     for (int j = 0; j < n - i; j++)
+    //     {
 
-            cout << (i + 1);
-        }
+    //         cout << (i + 1);
+    //     }
 
-        cout << endl;
+    //     cout << endl;
+    // }
+
+
+    // int n = 3;
+
+
+    // for(int i = 1; i <= n; i++) {
+        
+    //    for(int j =1 ; j <= i ; j++) {
+    //         cout << j << " ";
+    //    }
+    //    cout << endl;
+    // }
+
+//     int n = 3;
+//     int num = 1;
+    
+    
+
+//     for (int i = 1; i <= n; i++)
+//     {
+
+       
+//        for(int j = 1; j <=i; j++) {
+//             cout << num << " ";
+//             num++;
+           
+//         }
+
+// cout << endl;
+   
+    
+
+
+// }
+
+// Reversed Floyd’s Triangle
+int n = 5;
+int num = n * (n + 1) / 2; // formula to find the sum of n natural numbers
+
+for (int i = n; i >= 1; i--)
+{
+
+    
+   for(int j = 1; j <= i; j++) {
+        cout << num << " ";
+        num--;
+       
+       
     }
+    cout << endl;
+
+} 
+
+//
+
 }
