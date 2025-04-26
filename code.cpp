@@ -248,3 +248,82 @@ using namespace std;
 //     cout << binarytoDec(num) << endl;
 //     return 0;
 // }
+
+// find if a number is power of 2 without any loop c++
+
+// bool isPowerofTwo(int n)
+// {
+//     return (n > 0) && ((n & (n - 1)) == 0);
+// }
+// int main()
+// {
+//     int num = 15;
+
+//     if (isPowerofTwo(num))
+//     {
+//         cout << num << " is a power of 2" << endl;
+//     }
+//     else
+//     {
+//         cout << num << " is not a power of 2" << endl;
+//     }
+//     return 0;
+// }
+
+// Check if a number is even or odd using bitwise operator
+
+// bool isEvenorOdd(int n)
+// {
+//     return (n & 1) == 0; // if last bit is 0 then even
+// }
+
+// int main() {
+
+//     int num = 6;
+
+//     if(isEvenorOdd(num))
+//     {
+//         cout << num << " is even" << endl;
+//     }
+//     else
+//     {
+//         cout << num << " is odd" << endl;
+//     }
+//     return 0;
+// }
+
+// Swap two numbers without using a third variable (use XOR)
+
+// int main () {
+//     int a = 5;
+//     int b = 10;
+
+//     cout << "Before swapping : a = " << a << ", b = " << b << endl;
+//     a = a ^ b;
+//     b = a ^ b;
+//     a = a ^ b;
+//     cout << "After swapping : a = " << a << ", b = " << b << endl;
+//     return 0;
+// }
+
+// Remove the Rightmost Set Bit
+
+// int logic(int n)
+// {
+//     if (n == 0)
+//         return 0;
+
+//     int rsb = n & -n;
+//     // The result of n & -n is always a power of 2 (like 1, 2, 4, 8...). So log2(n & -n) gives the index of the set bit (0-based), and we add 1 to make it 1-based.
+//     return log2(rsb) + 1;
+// }
+// int main()
+// {
+
+//     int n = 18;
+
+//     cout << logic(n) << ends;
+// }
+
+
+

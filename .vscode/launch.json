@@ -1,0 +1,13 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "C/C++ Runner: Debug Session",
+      "type": "lldb",
+      "request": "launch",
+      "args": [],
+      "cwd": "/Users/shivanipandey/Documents/c++_projects",
+      "program": "/Users/shivanipandey/Documents/c++_projects/build/Debug/outDebug"
+    }
+  ]
+}
