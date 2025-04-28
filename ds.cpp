@@ -105,31 +105,156 @@ using namespace std;
 
 // q4 reverse an array
 
-void reverseArray(int arr[], int sz)
-{
-    int start = 0;
-    int end = sz - 1;
+// void reverseArray(int arr[], int sz)
+// {
+//     int start = 0;
+//     int end = sz - 1;
 
-    while (start < end)
-    {
-        swap(arr[start], arr[end]);
-        start++;
-        end--;
-    }
-}
+//     while (start < end)
+//     {
+//         swap(arr[start], arr[end]);
+//         start++;
+//         end--;
+//     }
+// }
 
-int main()
-{
+// int main()
+// {
 
-    int arr[] = {4, 2, 7, 8, 1, 2, 5};
+//     int arr[] = {4, 2, 7, 8, 1, 2, 5};
 
-    int sz = 7;
+//     int sz = 7;
 
-    reverseArray(arr, sz);
-    for (int i = 0; i < sz; i++)
-    {
-        cout << arr[i] << " ";
-    }
+//     reverseArray(arr, sz);
+//     for (int i = 0; i < sz; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
 
-    cout << endl;
-}
+//     cout << endl;
+// }
+
+// q5 calculate sum and product of all the numbers in an array
+
+// int main() {
+
+//     int arr[] = {2, 3, 4, 5, 6};
+
+//     int sz = 5;
+
+//     int sum = 0;
+//     int product = 1;
+
+//     for (int i = 0; i < sz; i++)
+//     {
+//       sum += arr[i];
+//       product *=  arr[i];
+
+//     }
+
+//     cout << sum << endl;
+//     cout << product << endl;
+
+//   return 0;
+
+// }
+
+// q6 swap the max & min number of an array.
+// int main()
+// {
+
+//     int arr[] = {2, 3, 4, 5, 6};
+
+// int sz = 5;
+
+// int largest = INT_MIN;
+// int smallest = INT_MAX;
+
+// int largestIndex = -1;
+// int smallestIndex = -1;
+
+// for (int i = 0; i < sz; i++)
+// {
+//     if (arr[i] < smallest)
+//     {
+//         smallest = arr[i];
+//         smallestIndex = i;
+//         // element at index i is smaller than smallest
+//     }
+
+//     if (arr[i] > largest)
+//     {
+//             largest = arr[i];
+//             largestIndex = i;
+//             // swap the largest with the last element
+//         }
+//     }
+
+//     swap(arr[largestIndex], arr[smallestIndex]);
+
+//     cout << "Smallest: " << smallest << "smallest index:" << smallestIndex << endl;
+//     cout << "Largest: " << largest << "largest index:" << largestIndex << endl;
+
+//     cout << "Array after swapping: ";
+//     for (int i = 0; i < sz; i++)
+//     {
+//         cout << arr[i] << " ";
+//     }
+//     cout << endl;
+// }
+
+// q7 print all the unique values in an array.
+
+// int main()
+// {
+
+//   int arr[] = {2, 3, 4, 5, 6, 2, 3, 4};
+//   int sz = 8;
+
+//   // outerloop
+
+//   for (int i = 0; i < sz; i++)
+//   {
+//     bool isUnique = true;
+
+//     for (int j = 0; j < sz; j++)
+//     {
+//       if (i != j && arr[i] == arr[j])
+//       {
+
+//         isUnique = false;
+
+//         break;
+//       }
+//     }
+//     if (isUnique)
+//     {
+//       cout << arr[i] << " ";
+//     }
+//   }
+//   cout << endl;
+// }
+
+// q8 print intersection of 2 arrays
+
+// int main()
+// {
+
+//   int arr1[] = {1, 2, 5, 0, 7, 6};
+//   int arr2[] = {2, 6, 8, 7, 4, 8};
+
+//   int sz1 = 6;
+//   int sz2 = 6;
+
+//   for (int i = 0; i < sz1; i++)
+//   {
+//     for (int j = 0; j < sz2; j++)
+//     {
+//       if (arr1[i] == arr2[j])
+//       {
+//         cout << arr1[i] << endl;
+//         break;
+//       }
+//     }
+//   }
+// }
